@@ -1,0 +1,79 @@
+:root {
+    color-scheme: light;
+    --navy: #102a43;
+    --blue: #1769aa;
+    --muted: #627d98;
+    --surface: #ffffff;
+    --page: #f3f7fb;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--page);
+    color: var(--navy);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.site-header {
+    background: linear-gradient(115deg, #102a43, #1769aa);
+}
+
+.eyebrow {
+    color: #b9d9f3;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.panel,
+.seminar-card {
+    padding: 2rem;
+    border: 1px solid #e1eaf2;
+    border-radius: 1rem;
+    background: var(--surface);
+    box-shadow: 0 0.75rem 2rem rgb(16 42 67 / 7%);
+}
+
+.seminar-card {
+    background: #eaf3fb;
+}
+
+.seminar-card .eyebrow {
+    color: var(--blue);
+}
+
+.seminar-details {
+    display: grid;
+    gap: 1.15rem;
+    margin: 0 0 1.5rem;
+}
+
+.seminar-details dt {
+    margin-bottom: 0.25rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.seminar-details dd {
+    margin: 0;
+    font-weight: 600;
+}
+
+.site-footer {
+    background: #102a43;
+    color: #d9e8f5;
+}
+
+@media (max-width: 575.98px) {
+    .panel,
+    .seminar-card {
+        padding: 1.35rem;
+    }
+}
